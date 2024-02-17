@@ -1,0 +1,206 @@
+.contenedorPresentacion {
+	display:  grid; 
+	grid-template-columns: repeat(32,1fr);
+	grid-template-rows: repeat(18,1fr);
+	/*id-gap: 0.5%;*/
+	height: 100vh; 
+	background: url('../imagenes/hotel-atardecer.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.omotenashi{
+	background: url('../imagenes/omotenashi.jpg') no-repeat center center fixed; 
+}
+.inicio,
+.sinContenido,
+.contacto,
+.idioma {
+	background: black;
+	max-height: 36px;
+    font-size:  0.9em; 
+}
+.inicio{
+	grid-column:  1 / span 4;
+	display: grid;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;
+}
+.sinContenido{
+	grid-column:  5 /span 20;
+}
+.contacto img, .idioma img, .botonReservar img{
+	max-width: 100%;
+    max-height: 16px;
+}
+.idioma{
+	grid-column:  span 3;
+}
+
+.btn-sm {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.btn-sm:hover {
+  background-color: rgba(255,255,255, 0.2); 
+  border-color: transparent;
+}
+
+.menu,
+.logoFujitaya,
+.sinContenido2,
+.reservar{
+	background-color: transparent;
+	max-height: 45px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+.menu{
+	grid-column: span 2;
+	grid-row:  2/span 2;
+
+}
+.logoFujitaya{
+	grid-row:  2/span 2;
+}
+.logoFujitaya img, .menu img{
+	max-width: 100%;
+    max-height: 100%; 
+    max-width: 45px;
+}
+.logoFujitaya img{
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.menu img{
+    margin-left: 25%;
+}
+.sinContenido2{
+	grid-column: span 24;
+	grid-row:  2/span 2;
+}
+.reservar{
+	grid-column: span 6;
+	grid-row:  2/span 2;
+}
+
+.presentacion{
+	grid-column:  span 32;
+	grid-row: 4 / span 11;
+}
+
+.logo {
+  grid-column: span 4;
+  grid-row: 15 / span 4;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out; /* Agregamos una transición para suavizar el efecto */
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  max-width: 50px;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Agranda el logo al 110% del tamaño original al pasar el ratón por encima */
+}
+
+.botonReservar img{
+	max-width: 100%;
+    max-height: 20px;
+}
+
+.contenido{
+	display:  flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    max-width: 100%;
+    margin: 1%;
+    padding: 0.5%;
+}
+
+.imagen img {
+	max-width: 200px;
+	max-height: 200px;
+
+}
+
+.texto{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 720px;
+    margin: 1%;
+    padding: 0.5%;
+
+}
+
+.footer{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+#info{
+	max-width: 1400px;
+}
+
+/*menu desplegable principal*/
+
+#dropdownMenuButton{
+  border: none; 
+  margin: 0; 
+  padding: 0%;
+  padding-right: 10%;
+  background-color: transparent;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 1); /* Valor corregido para la sombra */
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+.menu {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 100%; /* Ajuste para mostrar a la derecha */
+  top: 0; 
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo con opacidad */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column; 
+  position:absolute;
+}
+
+
+/*https://www.mandarinoriental.com/es*/

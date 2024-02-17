@@ -1,0 +1,345 @@
+@media (max-width: 1300px) {}
+
+@media (max-width: 1120px) {}
+
+@media (max-width: 992px) {
+  .hero_area {
+    min-height: auto;
+  }
+
+
+  .custom_nav-container .navbar-nav {
+    padding-top: 15px;
+  }
+
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    padding: 5px 25px;
+    margin: 5px 0;
+  }
+
+  .slider_section .detail-box h1 {
+    font-size: 2.5rem;
+  }
+
+  .slider_section {
+    padding: 75px 0;
+  }
+
+  .slider_section .carousel_btn-box a {
+    position: unset;
+    transform: none;
+  }
+
+  .about_section .img-box img {
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header_section .header_top .social_box {
+    display: none;
+  }
+
+  .header_section .header_top .contact_nav a span {
+    font-size: 15px;
+  }
+
+  .slider_section .detail-box {
+    text-align: center;
+  }
+
+  .slider_section .detail-box .btn-box {
+    justify-content: center;
+  }
+
+  .about_section .img-box {
+    margin-top: 45px;
+  }
+
+  .contact_section .form_container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .info_section .info_contact {
+    margin: 15px 0;
+  }
+
+  .info_section .row>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info_section .info_main .rov>div {
+    margin-bottom: 25px;
+  }
+
+  .info_section .social_box {
+    margin-bottom: 25px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .header_section .header_top .contact_nav a span {
+    display: none;
+  }
+
+  .client_section .carousel-control-prev,
+  .client_section .carousel-control-next {
+    position: unset;
+    transform: none;
+  }
+
+  .carousel_btn-box {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 420px) {}
+
+@media (max-width: 376px) {}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+
+/* 
+---------------------------------------------
+responsive reservas
+--------------------------------------------- 
+*/
+
+@media (max-width: 992px) {
+  #top {
+    padding-top: 100px;
+    height: auto;
+  }
+  .header-area .main-nav .nav li.submenu:after {
+    right: 3px;
+  }
+  .header-area .main-nav .nav li.submenu {
+    padding-right: 15px;
+  }
+  .header-area .main-nav .nav li {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .header-area .main-nav .nav li a {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  #top .left-content {
+    text-align: center;
+    padding: 25% 0px;
+  }
+  #about .right-content {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  #chefs .chef-item {
+    margin-bottom: 30px;
+  }
+  #reservation .phone {
+    margin-bottom: 60px;
+  }
+  #contact {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  #offers .tabs-content .left-list {
+    margin-right: 0px;
+  }
+
+  #offers .tabs-content .right-list {
+    margin-left: 0px;
+  }
+  footer .right-text-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  footer .left-text-content p {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+#preloader {
+  overflow: hidden;
+  background-color: #fb5849;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 99999;
+  color: #fff;
+}
+
+#preloader .jumper {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#preloader .jumper > div {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: jumper 1s 0s linear infinite;
+  animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper > div:nth-child(2) {
+  -webkit-animation-delay: 0.33333s;
+  animation-delay: 0.33333s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+  -webkit-animation-delay: 0.66666s;
+  animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*@media se crea para que los elementos se ajusten en dif dispositivos/tamaños*/
+@media only screen and (max-width: 900px){
+  .contenedorPresentacion{
+    font-size: 0.55em;
+    padding: 0;
+  }
+ 
+ 
+  .menu >img, .logoFujitaya >img{
+    max-width: 100%;
+    width: 25px;
+  }
+
+  .logo > img{
+    max-width: 90%;
+    width: 15px;
+    max-height: 90%;
+    height: 15px;
+  }
+
+  .topnav a{
+    margin: 15px 0px;
+    padding: 0px 6px;
+
+  }
+  
+  body{
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(16, 1fr); /* Cambia el número de columnas */
+    grid-template-rows: repeat(24, 1fr); /* Cambia el número de filas */
+    gap: 5px; /* Ajusta el espacio entre las celdas para pantallas más pequeñas */
+  }
+
+
+  span {
+        display: none; /* Oculta el texto cuando el tamaño de la pantalla es menor */
+    }
+
+}
+
+
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+
+    .main-button a {
+        font-size: 0.75em; /* Ajuste de tamaño para pantallas más pequeñas */
+        height: 2em; /* Ajuste de altura para pantallas más pequeñas */
+        line-height: 2em; /* Ajuste de line-height para pantallas más pequeñas */
+        padding: 0 1.25em; /* Ajuste de padding para pantallas más pequeñas */
+        border-radius: 1.25em; /* Ajuste de border-radius para pantallas más pequeñas */
+
+  .contactsbar {
+    grid-template-columns: repeat(2, 1fr);
+    max-height: none;
+    font-size: 0.8em;
+  }
+
+  .inicio,
+  .idioma {
+    font-size: 0.7em;
+  }
+
+  .menus {
+    grid-template-columns: repeat(10, 1fr);
+    max-height: 45px;
+    font-size: 0.8em;
+  }
+
+  .contenido,
+  .imagen img,
+  .texto {
+    max-width: 90%;
+  }
+
+   span {
+        display: none; /* Oculta el texto cuando el tamaño de la pantalla es menor */
+    }
+
+}
+
+

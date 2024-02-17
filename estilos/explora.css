@@ -1,0 +1,218 @@
+
+/* 
+---------------------------------------------
+Properties Style
+--------------------------------------------- 
+*/
+
+.properties ul.properties-filter {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4.375em; /* Equivalente a 70px en em */
+}
+
+.properties ul.properties-filter li {
+  display: inline-block;
+  margin: 0.3125em 0.5em; /* Equivalente a 5px 8px en em */
+}
+
+.properties ul.properties-filter li a {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.9375em; /* Equivalente a 15px en em */
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 0.75em 1.5625em; /* Equivalente a 12px 25px en em */
+  border-radius: 0.3125em; /* Equivalente a 5px en em */
+  transition: all 0.3s;
+}
+
+.properties ul.properties-filter li a.is_active {
+  background-color: #f35525;
+  color: #fff;
+}
+
+.properties ul.properties-filter li a.is_active:hover {
+  color: #fff;
+}
+
+.properties ul.properties-filter li a:hover {
+  color: #f35525;
+}
+
+.properties ul.pagination {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.properties ul.pagination li {
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.properties ul.pagination li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50%;
+  transition: all .3s;
+}
+
+.properties ul.pagination li a:hover,
+.properties ul.pagination li a.is_active {
+  background-color: #f35525;
+  color: #fff;
+}
+
+
+@media (max-width: 767px) {
+  .header-area .main-nav .logo h1 {
+    line-height: 80px !important;
+  }
+  .best-deal .tabs-content .nav-link {
+    font-size: 14px;
+    padding: 0px 15px;
+    height: 44px;
+    line-height: 44px;
+  }
+  .best-deal .tabs-content ul.nav-tabs li {
+    margin: 0px 5px;
+  }
+  .properties ul.properties-filter li a {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .properties ul.properties-filter li {
+    margin: 5px;
+  }
+  .header-area .main-nav .nav li:last-child {
+    display: none;
+  }
+}
+
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul {
+  margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.page-heading h3 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f35525;
+}
+
+
+.page-heading {
+    padding: 110px 0px;
+    text-align: center;
+}
+
+.row  img {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.properties .item {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.properties{
+  display: block;
+}
+
+element.style {
+    position: absolute;
+    left: 639.968px;
+    top: 0px;
+}
+.align-self-center {
+    align-self: center!important;
+}
+@media (min-width: 992px)
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+@media (min-width: 768px)
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.properties .item .main-button {
+    text-align: center;
+}
+
+.properties .item span.category {
+    background-color: #B7B6CA;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1e1e1e;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 25px;
+}
+.properties .item h6 {
+    font-size: 20px;
+    color: #f35525;
+    margin-top: 6px;
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+}
+
+.properties .item ul {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+ul {
+    margin-bottom: 0px;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+

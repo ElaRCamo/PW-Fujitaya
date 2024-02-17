@@ -1,0 +1,203 @@
+.contactsbar {
+  background-color: black;
+  width: 100vw;
+  box-sizing: border-box;
+  max-height: 2.25em; /* Equivalente a 36px en em */
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  justify-content: center;
+  color: aliceblue;
+}
+
+.inicio, .idioma {
+  max-height: 2.25em; /* Equivalente a 36px en em */
+  font-size: 0.8em;
+}
+.idioma {
+  display: flex;
+  flex-direction: row;
+  grid-column: span 3;
+}
+
+.inicio {
+  grid-column: span 4;
+}
+.sinContenido {
+  grid-column: span 18;
+  max-height: 2.25em; /* Equivalente a 36px en em */
+}
+
+.contacto img, .idioma img, .botonReservar img {
+  max-width: 100%;
+  max-height: 1em; /* Equivalente a 16px en em */
+}
+
+.contactsbar div {
+justify-self: center;
+align-self: center;
+}
+
+.idiomaBoton {
+background-color: transparent;
+border-color: transparent;
+margin: 0;
+padding: 0;
+
+}
+.idiomaBoton:hover {
+background-color: rgba(255,255,255, 0.2); 
+border-color: transparent;
+}
+.menus {
+  grid-template-columns: repeat(15, 1fr);
+  background-color: transparent;
+  max-height: 3.4375em; /* Equivalente a 55px en em */
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  font-size: 0.9em;
+  box-sizing: border-box;
+  display: grid;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.logoFujitaya img, .menu img {
+  max-width: 100%;
+  max-height: 100%;
+  max-width: 2.8125em; /* Equivalente a 45px en em */
+}
+
+.logoFujitaya img {
+  margin-left: 1.75em; /* Equivalente a 35px en em */
+  margin-right: 1.75em; /* Equivalente a 35px en em */
+}
+
+.menu img {
+  margin-left: 0.3125em; /* Equivalente a 5px en em */
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  max-width: 3.125em; /* Equivalente a 50px en em */
+}
+
+
+.menu,
+.logoFujitaya,
+.sinContenido2,
+.reservar {
+  background-color: transparent;
+  max-height: 2.8125em; /* Equivalente a 45px en em */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.menu,
+.logoFujitaya {
+  max-width: 3.125em; /* Equivalente a 50px en em */
+}
+
+.sinContenido2 {
+  grid-column: span 10;
+}
+
+.logo div {
+  max-width: 100%;
+}
+
+.botonReservar img {
+  max-width: 100%;
+  max-height: 1.25em; /* Equivalente a 20px en em */
+}
+
+.reservar{
+  grid-column: span 3;
+}
+
+.contenido{
+  display:  flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    max-width: 100%;
+    margin: 1%;
+    padding: 0.5%;
+}
+
+.imagen img {
+  max-width: 12.5em; /* Equivalente a 200px en em */
+  max-height: 12.5em; /* Equivalente a 200px en em */
+}
+
+.texto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 45em; /* Equivalente a 720px en em */
+  margin: 1%;
+  padding: 0.5%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#info {
+  max-width: 87.5em; /* Equivalente a 1400px en em */
+}
+
+
+
+/*menu desplegable principal*/
+
+#dropdownMenuButton{
+  border: none; 
+  margin: 0.1%; 
+  padding: 0%;
+  padding-right: 10%;
+  background-color: transparent;
+}
+
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 1); /* Valor corregido para la sombra */
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+.menu {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 100%; /* Ajuste para mostrar a la derecha */
+  top: 0; 
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo con opacidad */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column; 
+  position:absolute;
+}

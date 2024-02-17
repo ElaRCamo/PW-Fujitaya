@@ -21,10 +21,58 @@
     require_once('headerIndex.php')
     ?>
   </header>
-
 <?php
-     include('html/index.html'); 
+    include('html/index.php'); 
+    include('connection.php'); 
+
+    $enlace = mysqli_connect("localhost","administrador","54321","fujitaya");
+
+        if(!$enlace){
+            die("No hay conexión a la bases de datos".mysql_error());
+        }
+        echo "Conexión exitosa";
+        
+
+    if (isset($_POST['reservar'])){
+        if(strlen($_POST['name']) >= 1 &&
+           strlen($_POST['email']) >= 1 &&
+           strlen($_POST['phone']) >= 1 &&
+           strlen($_POST['numberguests']) >= 1 &&
+           strlen($_POST['date']) >= 1 &&
+           strlen($_POST['time']) >= 1 &&
+           strlen($_POST['message']) >= 1 ){
+
+            $name = trim($_POST['name']);
+            $email = trim($_POST['email']);
+            $phone = trim($_POST['phone']);
+            $numberguests = trim($_POST['numberguests']);
+            $date = trim($_POST['date']);
+            $formattedDate = date('Y/m/d', strtotime($date));
+            $time = trim($_POST['time']);
+            $message = trim($_POST['message']);
+            
+            $consulta = "INSERT INTO reservaciones( name, email, phone, numberguests, date, time, message) VALUES ('$name','$email','$phone','$numberguests','$date','$time','$message')";
+            
+            $resultado = mysqli_query($enlace,$consulta);
+
+            if($resultado){
+                ?>
+                <h3 class="ok">¡Reservación exitosa!</h3>
+                <script type="text/javascript"> alert("¡Reservación exitosa!")</script>
+                <?php
+            } else {
+                ?>
+                <h3 class="bad">¡Ha ocurrido un error!</h3>
+                <?php
+            }
+        } else {
+            ?>
+            <h3 class="bad">¡Complete los campos!</h3>
+            <?php
+        }
+    }mysqli_close($enlace);
 ?>
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
